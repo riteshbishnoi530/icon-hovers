@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media Icons</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #222;
+        }
+
+        .parent {
+            position: relative;
+            display: flex;
+            transform-style: preserve-3d;
+            transform: rotate(-25deg) skew(25deg);
+        }
+
+        .parent .child {
+            position: relative;
+            list-style: none;
+            width: 60px;
+            height: 60px;
+            margin: 0 10px;
+        }
+        
+        .parent .child span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            background-color: #333;
+            color: rgba(255, 255, 255, 0.2);
+            transition: 0.2s;
+        }
+
+        .parent .child:hover span {
+            z-index: 1000;
+            transition: 0.5s;
+            color: #fff;
+            box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.05);
+        }
+
+        .parent .child:hover span:nth-child(5) {
+            transform: translate(40px, -40px);
+            opacity: 1;
+        }
+
+        .parent .child:hover span:nth-child(4) {
+            transform: translate(30px, -30px);
+            opacity: 0.8;
+        }
+
+        .parent .child:hover span:nth-child(3) {
+            transform: translate(20px, -20px);
+            opacity: 0.6;
+        }
+
+        .parent .child:hover span:nth-child(2) {
+            transform: translate(10px, -10px);
+            opacity: 0.4;
+        }
+
+        .parent .child:hover span:nth-child(1) {
+            transform: translate(0px, 0px);
+            opacity: 0.2;
+        }
+
+        .parent .child:nth-child(1):hover span {
+            background: #3b5999;
+        }
+
+        .parent .child:nth-child(2):hover span {
+            background: #d93362;
+        }
+
+        .parent .child:nth-child(3):hover span {
+            background: #000000;
+        }
+
+        .parent .child:nth-child(4):hover span {
+            background: #25d366;
+        }
+
+        .parent .child:nth-child(5):hover span {
+            background: #0077b5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+            <a target="_blank" href="https://www.facebook.com/">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa-brands fa-facebook-f"></span>
+            </a>
+        </div>
+        <div class="child">
+            <a target="_blank" href="https://www.instagram.com/">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa-brands fa-instagram"></span>
+            </a>
+        </div>
+        <div class="child">
+            <a target="_blank" href="https://www.twitter.com/">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa-brands fa-x-twitter"></span>
+            </a>
+        </div>
+        <div class="child">
+            <a target="_blank" href="https://api.whatsapp.com/send?phone=+919992222222">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa-brands fa-whatsapp"></span>
+            </a>
+        </div>
+        <div class="child">
+            <a target="_blank" href="https://www.linkedin.com/">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fa-brands fa-linkedin-in"></span>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
